@@ -2,6 +2,7 @@ import { connectAI } from "./ConnectAI.js";
 import readlineSync from "readline-sync";
 const client = connectAI();
 
+// function to get the weather details
 function getWeatherDetails(city = "") {
   if (city.toLowerCase() === "jammu") return "2°C";
   if (city.toLowerCase() === "kashmir") return "-10°C";
